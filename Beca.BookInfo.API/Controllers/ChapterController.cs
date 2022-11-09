@@ -56,6 +56,7 @@ namespace Beca.BookInfo.API.Controllers
             var chapter = await _bookInfoRepository
                 .GetChapterForBookAsync(bookId, chapterId);
 
+
             if (chapter == null)
             {
                 return NotFound();
